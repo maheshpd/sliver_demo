@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sliver_demo/First_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -183,7 +184,9 @@ class MyHomePage extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => FirstPage()));
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.deepPurple,
                   ),
